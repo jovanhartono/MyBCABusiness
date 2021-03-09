@@ -1,0 +1,26 @@
+<mat-toolbar color = "primary" class="header">
+    <mat-toolbar-row class = "header-row-1">
+        <span id="header-text-1">myBCA<span id = "header-text-2">Bisnis</span></span>
+        
+        <div class="header-button-list">
+            <span>
+                {{ time | date: 'd MMM YYYY HH:mm:ss' }}
+            </span>   
+        </div>
+        
+        
+    </mat-toolbar-row>
+
+    <mat-toolbar-row> 
+        
+            <!-- <button (click) = "openSnackBar('menuOpen')" mat-mini-fab id = "button-menu" aria-label="Example icon button with a menu icon">
+                <mat-icon>menu</mat-icon>
+            </button> -->
+            <button (click) = "openDialog()"  class = "button-menu" aria-label="Example icon button with a menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+
+            <span class ="menu-text">menu</span>
+          
+    </mat-toolbar-row>   
+</mat-toolbar>
