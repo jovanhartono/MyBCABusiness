@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogExampleComponent } from '../dialog-example/dialog-example.component';
+import { MenuComponent } from "./menu/menu.component";
 
 @Component({
   selector: 'app-header',
@@ -9,7 +9,7 @@ import { DialogExampleComponent } from '../dialog-example/dialog-example.compone
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  time = new Date(); 
+  time = new Date();
   timer;
 
   constructor(private snackBar : MatSnackBar, private dialog : MatDialog) { }
@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
   }
 
   openDialog(){
-    let dialogReference = this.dialog.open(DialogExampleComponent, {panelClass : 'custom-dialog-container'});
+    let dialogReference = this.dialog.open(MenuComponent, {panelClass : 'custom-dialog-container'});
 
     dialogReference.afterClosed().subscribe(result => {
       console.log(`Dialog Result: ${result}`);

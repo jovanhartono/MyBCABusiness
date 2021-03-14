@@ -1,0 +1,61 @@
+import { MenuInterface } from "./menu-interface";
+
+export const MENUS: MenuInterface[] =[
+  {
+    tabId : 1,
+    tabLabel:'Rekening',
+    subMenu:[
+      {
+        subMenuId:1,
+        subMenuIcon:'paid',
+        subMenuLabel:'MUTASI REKENING'
+      },
+      {
+        subMenuId:2,
+        subMenuIcon:'request_quote',
+        subMenuLabel:'E-STATEMENT'
+      }
+    ]
+  },
+  {
+    tabId:2,
+    tabLabel:'Pembayaran',
+    subMenu:[
+
+    ]
+  },
+  {
+    tabId:3,
+    tabLabel:'Pembayaran',
+    subMenu:[
+      {
+        subMenuId: 1,
+        subMenuIcon: 'account_balance_wallet',
+        subMenuLabel: 'PEMBAYARAN TAGIHAN'
+      },
+      {
+        subMenuId:2,
+        subMenuIcon: 'recepit',
+        subMenuLabel: 'PEMBAYARAN PAJAK'
+      }
+    ]
+  },
+  {
+    tabId:4,
+    tabLabel:'SCF',
+    subMenu:[]
+  },
+  {
+    tabId:5,
+    tabLabel: 'Aktivitas',
+    subMenu:[
+      {
+        subMenuId:1,
+        subMenuIcon:'plagiarism',
+        subMenuLabel:'STATUS TRANSAKSI'
+      }
+    ]
+  },
+];
+
+

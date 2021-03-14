@@ -1,26 +1,44 @@
 <mat-toolbar color = "primary" class="header">
     <mat-toolbar-row class = "header-row-1">
-        <span id="header-text-1">myBCA<span id = "header-text-2">Bisnis</span></span>
-        
+        <span class="header-text-1">myBCA<span class = "header-text-2">Bisnis</span></span>
+
         <div class="header-button-list">
-            <span>
+          <mat-icon>query_builder</mat-icon>
+            <span id="timer">
                 {{ time | date: 'd MMM YYYY HH:mm:ss' }}
-            </span>   
+            </span>
         </div>
-        
-        
     </mat-toolbar-row>
 
-    <mat-toolbar-row> 
-        
+    <mat-toolbar-row class="header-row-2">
+
             <!-- <button (click) = "openSnackBar('menuOpen')" mat-mini-fab id = "button-menu" aria-label="Example icon button with a menu icon">
                 <mat-icon>menu</mat-icon>
             </button> -->
+          <div class = "div-menu">
             <button (click) = "openDialog()"  class = "button-menu" aria-label="Example icon button with a menu icon">
-                <mat-icon>menu</mat-icon>
+              <mat-icon>menu</mat-icon>
             </button>
+              <span class ="menu-text">menu</span>
+          </div>
 
-            <span class ="menu-text">menu</span>
-          
-    </mat-toolbar-row>   
+          <div class = "div-exit">
+            <mat-icon id = "mat-icon-exit">exit_to_app</mat-icon>
+            <span class =  "menu-text">KELUAR</span>
+          </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<mat-toolbar color="primary" class = "header-mobile">
+  <mat-toolbar-row class = "header-row-1-mobile">
+    <span class="header-text-1">myBCA<span class = "header-text-2">Bisnis</span></span>
+    <div class = "div-menu">
+      <button (click) = "openDialog()"  class = "button-menu" aria-label="Example icon button with a menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar-row>
 </mat-toolbar>

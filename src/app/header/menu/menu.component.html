@@ -1,0 +1,15 @@
+<mat-dialog-content>
+  <mat-tab-group class = "tab-group">
+    <div *ngFor="let menu of menus">
+      <mat-tab id = "{{menu.tabId}}" label="{{menu.tabLabel}}">
+        <div class="container-tab">
+          <div class = "tab-icon-style" *ngFor="let subMenu of menu.subMenu">
+            <mat-icon class = "icons-sz-36">{{subMenu.subMenuIcon}}</mat-icon>
+            <p>{{subMenu.subMenuLabel}}</p>
+          </div>
+        </div>
+      </mat-tab>
+    </div>
+  </mat-tab-group>
+</mat-dialog-content>
+
